@@ -1,6 +1,6 @@
 # FILE CREATION TOOL
 
-A script to create a file with copyright comments and guard macros. As for now, the tool suppports C, C++ and Python.
+A automated scripting tool which will create a file with copyright comments and guard macros. As for now, the tool suppports C, C++ and Python.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ Your system should capable of running bash scripts. For windows users, we recomm
 
 ### How to use?
 
-Copy and paste the file.sh in your project folder. Edit the Authour name and e-mail id.
+Copy and paste the file.sh in your project folder. Edit the Author name and e-mail id.
 
 ```
 AUTHOUR_NAME="yogeshwaran"
