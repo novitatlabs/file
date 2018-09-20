@@ -2,19 +2,20 @@
 
 AUTHOUR_NAME="yogeshwaran"
 MAIL_ID="yogesh@novitatlabs.com"
+FILE_NAME=${2//-/_}
 
 if [ $1 = "c" ] || [ $1 = "C" ]; then
 	copyright_msg=$"/**\nCopyrights (c) 2018 Novitat Engineering Solutions, Chennai.\nAuthor: $AUTHOUR_NAME [$MAIL_ID]\nCreated on: $(date)\n**/\n"
 	source_msg=$copyright_msg$"#include \"$2.h\"\n"
-	header_msg=$copyright_msg$"#ifndef _${2^^}_\n#define _${2^^}_\n\n\n#endif"
+	header_msg=$copyright_msg$"#ifndef _${FILE_NAME^^}_\n#define _${FILE_NAME^^}_\n\n\n#endif"
     echo -e $source_msg > $2.c
 	echo -e $header_msg > $2.h
 fi
 
 if [ $1 = "cpp" ] || [ $1 = "CPP" ] || [ $1 = "CPP" ]; then
 	copyright_msg=$"/**\nCopyrights (c) 2018 Novitat Engineering Solutions, Chennai.\nAuthor: $AUTHOUR_NAME [$MAIL_ID]\nCreated on: $(date)\n**/\n"
-	source_msg=$copyright_msg$"#include \"$2.h\"\n"
-	header_msg=$copyright_msg$"#ifndef _${2^^}_\n#define _${2^^}_\n\n\n#endif"
+	source_msg=$copyright_msg$"#include \"$FILE_NAME.h\"\n"
+	header_msg=$copyright_msg$"#ifndef _${FILE_NAME^^}_\n#define _${FILE_NAME^^}_\n\n\n#endif"
     echo -e $source_msg > $2.cpp
 	echo -e $header_msg > $2.h
 fi
