@@ -12,30 +12,25 @@ Your system should capable of running bash scripts. For windows users, we recomm
 
 ### How to use?
 
-Copy and paste the file.sh in your project folder. Edit the Author name and e-mail id.
-
-```
-AUTHOUR_NAME="yogeshwaran"
-MAIL_ID="yogesh@novitatlabs.com"
-```
+Copy and paste the file.sh in your project folder.
 
 The command execution is here under:
-To create C code use,
+To create C files,
 ```
 ./file.sh c <file-name>
 ```
 
-To create C++ code use,
+To create C++ files,
 ```
 ./file.sh cpp <file-name>
 ```
-This will create source file and header file with copyright message, author name, e-mail, time and date of file creation.
+This will create source file and header file with copyright message and guard macro.
 
 To create Python code use,
 ```
 ./file.sh py <file-name>
 ```
-This will create a python file with copyright message, author name, e-mail, time and date of file creation.
+This will create a python file with copyright message.
 
 ## Authors
 
