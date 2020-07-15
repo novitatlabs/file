@@ -4,16 +4,15 @@ FILE_NAME_MACRO=${2//-/_}
 FILE_NAME_PY=${2//-/_}
 FILE_NAME_C=${2//_/-}
 
-copyright_msg_py=$"
-'''\n
-# Copyrights (c) $(date +'%Y') Novitat Engineering Solutions LLP, Chennai and\n
-# Invent Solutions Private Limited, Chennai.\n
-# All rights reserved.\n
-#\n
-# This program and the accompanying materials are made available\n
-# under the terms described in the LICENSE file which accompanies\n
-# this distribution. If the LICENSE file was not attached to this\n
-# distribution or for further clarifications, please contact\n
+copyright_msg_py=$"'''
+# Copyrights (c) $(date +'%Y') Novitat Engineering Solutions LLP, Chennai and
+# Invent Solutions Private Limited, Chennai.
+# All rights reserved.
+#
+# This program and the accompanying materials are made available
+# under the terms described in the LICENSE file which accompanies
+# this distribution. If the LICENSE file was not attached to this
+# distribution or for further clarifications, please contact
 # legal@inventsoln.com\n'''"
 
 copyright_msg_c=$"/* Copyrights (c) $(date +'%Y') Novitat Engineering Solutions LLP, Chennai and
@@ -47,5 +46,5 @@ fi
 
 if [ $1 = "py" ] || [ $1 = "python" ]; then
 	base_code=$copyright_msg_py
-  echo -e $base_code > $FILE_NAME.py
+  echo -e "$base_code" > $FILE_NAME_PY.py
 fi
