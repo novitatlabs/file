@@ -32,17 +32,6 @@ To create Python code use,
 ```
 This will create a python file with copyright message.
 
-## Authors
-
-* **Yogeshwaran** - *yogesh@novitatlabs.com*
-
 ## License
 
 This project is yet to be licensed.
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
